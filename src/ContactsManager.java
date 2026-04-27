@@ -10,4 +10,12 @@ public class ContactsManager {
         myFriends[friendsCount] = contact;
         friendsCount++;
     }
+    Contact searchContact(String name){
+        for(int i = 0; i < friendsCount; i++){
+            if(myFriends[i].name.equals(name)){
+                return myFriends[i];
+            }
+        }
+        return null;
+    }
 }
