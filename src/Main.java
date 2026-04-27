@@ -30,7 +30,7 @@ public class Main {
         c5.name = "yohann";
         c5.phoneNumber = "0505487925";
         manager.addContact(c5);
-        Contact result = manager.searchContact("Awa");
+        Contact result = manager.searchContact("yohann");
 
         if(result != null){
             System.out.println(result.phoneNumber);
